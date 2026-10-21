@@ -1,0 +1,33 @@
+{
+  "valor": "Diagnóstico Automotriz",
+  "pregunta": "¿Qué tipo de revisión necesita el vehículo?",
+  "hijos": [
+    {
+      "valor": "Mantenimiento Preventivo",
+      "pregunta": "¿Qué área deseas revisar (ej. antes de un viaje)?",
+      "hijos": [
+        { "valor": "Revisión de frenos" },
+        { "valor": "Niveles de líquidos (refrigerante, aceite, plumillas)" },
+        { "valor": "Inspección de fugas en la parte inferior" }
+      ]
+    },
+    {
+      "valor": "Mantenimiento por Kilometraje o Tiempo",
+      "pregunta": "¿Qué componente requiere mantenimiento rutinario?",
+      "hijos": [
+        { "valor": "Cambios de aceite y filtros" },
+        { "valor": "Cambio de correa de distribución" },
+        { "valor": "Alineación y balanceo de llantas" }
+      ]
+    },
+    {
+      "valor": "Mantenimiento por Avería o Falla",
+      "pregunta": "¿Qué sistema presenta el problema?",
+      "hijos": [
+        { "valor": "Falla en el motor (ruidos anormales, pérdida de potencia)" },
+        { "valor": "Problemas eléctricos (no enciende, batería, alternador)" },
+        { "valor": "Frenos defectuosos (ruido al frenar, pedal largo)" }
+      ]
+    }
+  ]
+}
