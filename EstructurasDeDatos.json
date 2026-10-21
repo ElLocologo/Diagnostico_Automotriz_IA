@@ -1,33 +1,79 @@
 {
-  "valor": "Diagnóstico Automotriz",
-  "pregunta": "¿Qué tipo de revisión necesita el vehículo?",
-  "hijos": [
-    {
-      "valor": "Mantenimiento Preventivo",
-      "pregunta": "¿Qué área deseas revisar (ej. antes de un viaje)?",
-      "hijos": [
-        { "valor": "Revisión de frenos" },
-        { "valor": "Niveles de líquidos (refrigerante, aceite, plumillas)" },
-        { "valor": "Inspección de fugas en la parte inferior" }
-      ]
+  "Mantenimiento Preventivo": {
+    "Sistema de Frenos": {
+      "Inspección de pastillas y discos": null,
+      "Cambio de líquido de frenos": null
     },
-    {
-      "valor": "Mantenimiento por Kilometraje o Tiempo",
-      "pregunta": "¿Qué componente requiere mantenimiento rutinario?",
-      "hijos": [
-        { "valor": "Cambios de aceite y filtros" },
-        { "valor": "Cambio de correa de distribución" },
-        { "valor": "Alineación y balanceo de llantas" }
-      ]
+    "Sistema de Motor y Filtración": {
+      "Cambio de aceite y filtro de motor": null,
+      "Inspección / Cambio de filtro de aire y cabina": null
     },
-    {
-      "valor": "Mantenimiento por Avería o Falla",
-      "pregunta": "¿Qué sistema presenta el problema?",
-      "hijos": [
-        { "valor": "Falla en el motor (ruidos anormales, pérdida de potencia)" },
-        { "valor": "Problemas eléctricos (no enciende, batería, alternador)" },
-        { "valor": "Frenos defectuosos (ruido al frenar, pedal largo)" }
-      ]
+    "Sistema de Suspensión y Neumáticos": {
+      "Rotación y calibración de neumáticos": null,
+      "Revisión de amortiguadores y bujes": null
+    },
+    "Sistema de Iluminación y Eléctrico": {
+      "Revisión y alineación de faros": null,
+      "Inspección y limpieza de bornes de batería": null
+    },
+    "Sistema de Dirección": {
+      "Alineación y balanceo computarizado": null,
+      "Revisión de líquido y bomba de dirección hidráulica": null
+    },
+    "Sistema de Climatización (A/C)": {
+      "Recarga de gas refrigerante y revisión de fugas": null,
+      "Limpieza de ductos, evaporador y control de olores": null
     }
-  ]
+  },
+  "Mantenimiento por Kilometraje / Tiempo": {
+    "Servicio de Corto Alcance (10,000 km / 6 meses)": {
+      "Inspección general de puntos clave y fluidos": null
+    },
+    "Servicio de Mediano Alcance (50,000 km / 2 años)": {
+      "Reemplazo de bujías y cables": null,
+      "Cambio de refrigerante de motor": null
+    },
+    "Servicio de Largo Alcance (100,000 km / 5 años)": {
+      "Cambio de correa / cadena de distribución": null,
+      "Mantenimiento de transmisión (Manual / Automática)": null
+    },
+    "Inspección Reglamentaria Anual": {
+      "Verificación de emisiones contaminantes (Gases)": null,
+      "Revisión de sistema de escape y silenciador": null
+    },
+    "Mantenimiento de Visibilidad y Clima": {
+      "Cambio de plumillas limpiaparabrisas y llenado de líquido": null,
+      "Revisión del sistema de desempañador y calefacción": null
+    },
+    "Servicio de Sistemas de Inyección (75,000 km)": {
+      "Limpieza de inyectores (ultrasonido o boya)": null,
+      "Mantenimiento al cuerpo de aceleración y válvula IAC": null
+    }
+  },
+  "Mantenimiento por Avería o Falla": {
+    "Fallas Eléctricas y Electrónicas": {
+      "El vehículo no da marcha / Batería descargada": null,
+      "Testigo Check Engine encendido (Lectura OBD-II)": null
+    },
+    "Fallas Mecánicas y de Rendimiento": {
+      "Sobrecalentamiento del motor": null,
+      "Pérdida de potencia o tirones al acelerar": null
+    },
+    "Ruidos Extraños y Vibraciones": {
+      "Chirrido al frenar": null,
+      "Vibración en el volante a alta velocidad": null
+    },
+    "Fugas de Fluidos y Olores Anormales": {
+      "Mancha de aceite o líquido debajo del vehículo": null,
+      "Olor fuerte a combustible o anticongelante en la cabina": null
+    },
+    "Fallas en el Comportamiento del Frenado": {
+      "Pedal de freno esponjoso o se va hasta el fondo": null,
+      "El vehículo se desvía bruscamente hacia un lado al frenar": null
+    },
+    "Problemas de Encendido y Marcha Mínima": {
+      "El motor tarda mucho en arrancar en frío (mañanas)": null,
+      "Ralentí inestable (el motor tiembla o se apaga al detenerse)": null
+    }
+  }
 }
