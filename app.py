@@ -149,8 +149,8 @@ with st.sidebar:
     # Selector de modelo Ollama
     modelo_ollama = st.text_input(
         "Modelo de Ollama:",
-        value="llama3.2:1b",
-        help="Nombre del modelo descargado localmente (ej: llama3.2:1b, llama3, mistral, gemma:2b)"
+        value="llama-automotriz",
+        help="Nombre del modelo descargado localmente (ej: llama-automotriz, llama3, mistral, gemma:2b)"
     )
     
     temperatura = st.slider(
@@ -306,10 +306,9 @@ else:
             with st.spinner(f"Consultando a {modelo_ollama} vía Ollama..."):
                 stream = ollama.chat(
                     model=modelo_ollama,
-                    messages=[
-                        {"role": "system", "content": "Eres un mecánico automotriz experto y asesor de servicio técnico. Responde con explicaciones prácticas, seguras y estructuradas en español."},
-                        {"role": "user", "content": prompt}
-                    ],
+                messages=[
+                {"role": "user", "content": prompt}
+            ],
                     options={"temperature": temperatura},
                     stream=True
                 )
